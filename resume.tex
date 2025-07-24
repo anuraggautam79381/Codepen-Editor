@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{xcolor}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Define custom colors
+\definecolor{primary}{RGB}{0, 102, 204}
+\definecolor{secondary}{RGB}{64, 64, 64}
+\definecolor{accent}{RGB}{51, 51, 51}
+
+%----------FONT OPTIONS----------
+% Modern font selection
+\usepackage[sfdefault]{roboto}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for better balance
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Enhanced sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large\bfseries\color{primary}
+}{}{0em}{}[\color{primary}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\color{accent}#1} & \textbf{\small\color{secondary}#2} \\
+      \textit{\small\color{secondary}#3} & \textit{\small\color{secondary}#4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\color{accent}#1 & \textbf{\small\color{secondary}#2}\\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge\scshape\color{primary}Anurag Gautam} \\ 
+    \vspace{4pt}
+    {\color{secondary}Vrindavan, Uttar Pradesh} \\ 
+    \vspace{6pt}
+    \small\color{secondary}
+    \raisebox{-0.1\height}\faPhone\ +91 6395600256
+    \hspace{1em} $|$ \hspace{1em}
+    \href{mailto:anuraggautam79381@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ anuraggautam79381@gmail.com}
+    \\ \vspace{4pt}
+    \href{https://www.linkedin.com/in/anurag-gautam-258519252/}{\raisebox{-0.2\height}\faLinkedin\ LinkedIn}
+    \hspace{1em} $|$ \hspace{1em}
+    \href{https://github.com/anuraggautam79381}{\raisebox{-0.2\height}\faGithub\ GitHub}
+    \hspace{1em} $|$ \hspace{1em}
+    \href{https://leetcode.com/u/AnuragGautam02/}{\raisebox{-0.2\height}\faCode\ LeetCode}
+    \hspace{1em} $|$ \hspace{1em}
+    \href{https://www.geeksforgeeks.org/user/anuraggautam12/}{\raisebox{-0.2\height}\faCode\ GeeksforGeeks}
+\end{center}
+\vspace{-6pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {GLA University}{August 2022 -- June 2026}
+        {Bachelor of Technology in Computer Science \textbf{(CPI: 7.63)}}{Mathura, India}
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{\color{accent}Programming Languages:} Java, JavaScript, C, Python, HTML, CSS \\[3pt]
+        \textbf{\color{accent}Technologies \& Frameworks:} ReactJS, NodeJS, ExpressJS, MongoDB, SQL, Tailwind CSS \\[3pt]
+        \textbf{\color{accent}Developer Tools:} Git, GitHub, VS Code, Eclipse, Postman \\[3pt]
+        \textbf{\color{accent}Core Competencies:} Data Structures \& Algorithms, Web Development, Database Management, Problem Solving
+    }}
+\end{itemize}
+\vspace{-12pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {W3Grads}{June 2024}
+        {Web Development Intern}{Remote}
+        \resumeItemListStart
+            \resumeItem{Completed intensive 45-day training program in competitive programming and algorithm optimization, enhancing problem-solving capabilities and algorithmic thinking}
+            \resumeItem{Gained hands-on experience with MERN Stack and Generative AI integration while following industry-standard practices including Scrum methodology and collaborative coding}
+            \resumeItem{Contributed to development of dynamic full-stack web application with real-time features, improving user engagement and functionality}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{FitMitra - Fitness \& Wellness Platform} $|$ \emph{ReactJS, ExpressJS, NodeJS, MongoDB, Generative AI} $|$ \href{https://github.com/anuraggautam79381/fitmitra-mern}{\faGithub\ GitHub}}{2024}
+        \resumeItemListStart
+            \resumeItem{Developed comprehensive fitness platform combining restaurant reservation system with AI-powered fitness coaching}
+            \resumeItem{Implemented curated menu featuring gym-friendly dishes tailored for fitness enthusiasts and healthy lifestyle maintenance}
+            \resumeItem{Integrated AI chatbot for personalized fitness guidance, dietary recommendations, and real-time user query resolution}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading
+        {\textbf{CodePen Clone - Online Code Editor} $|$ \emph{ReactJS, Tailwind CSS} $|$ \href{https://github.com/anuraggautam79381/Codepen-Editor}{\faGithub\ GitHub}}{2024}
+        \resumeItemListStart
+            \resumeItem{Built responsive online code editor supporting HTML, CSS, and JavaScript with real-time preview functionality}
+            \resumeItem{Implemented dark/light theme toggle, integrated console output display, and optimized for mobile devices}
+            \resumeItem{Added code persistence, collaborative sharing via unique URLs, and secure ZIP download feature for project export}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading
+        {\textbf{Top Course Explorer} $|$ \emph{ReactJS, JavaScript, HTML, CSS} $|$ \href{https://github.com/anuraggautam79381/Top-Course-Explorer}{\faGithub\ GitHub}}{2024}
+        \resumeItemListStart
+            \resumeItem{Created course discovery platform enabling users to explore and filter educational content across multiple subjects}
+            \resumeItem{Utilized React hooks (useState, useEffect) for efficient state management and side effect handling}
+            \resumeItem{Enhanced user experience with React Icons integration and toast notifications for improved interactivity}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Certifications}
+\resumeSubHeadingListStart
+    \resumeItemListStart
+        \resumeItem{\textbf{Problem Solving:} Solved 350+ Data Structures and Algorithms problems across LeetCode and GeeksforGeeks platforms}
+        \resumeItem{\textbf{Academic Excellence:} Secured top 5 position among 700+ students in TBPPP Coding Test at GLA University}
+        \resumeItem{\textbf{Professional Certification:} \href{https://www.netacad.com/certificates?issuanceId=9f98422e-9a30-46f3-8bc2-8431eed09df3}{CCNA: Introduction to Networks} -- Cisco Networking Academy, GLA University}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+\begin{multicols}{3}
+    \begin{itemize}[itemsep=-2pt, parsep=2pt, leftmargin=0.15in]
+        \item\small Data Structures \& Algorithms
+        \item Operating Systems
+        \item Computer Networks
+        \item Database Management Systems
+        \item Object-Oriented Programming
+        \item Web Development
+    \end{itemize}
+\end{multicols}
+\vspace{-8pt}
+
+\end{document}
