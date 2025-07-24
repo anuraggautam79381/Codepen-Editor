@@ -2,7 +2,6 @@
 
 A fully functional CodePen-like online editor built with React, featuring real-time HTML, CSS, and JavaScript editing with live preview.
 
-![CodePen Clone](https://via.placeholder.com/800x400?text=CodePen+Clone+Preview)
 
 ## 🚀 Features
 
